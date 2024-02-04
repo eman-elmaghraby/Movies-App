@@ -1,0 +1,130 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body  data-bs-spy="scroll" data-bs-target="#navbar-example" data-offset="0">
+
+ <!-- Start Spinner -->
+ <div class="loading">
+  <span class="loader top-50 start-50 position-absolute"></span>
+ </div>
+
+<!-- End Spinner -->
+
+<!-- Start up icon -->
+<div class="up-icon-container position-fixed ">
+<div class="bg-black text-white d-flex align-items-center justify-content-center rounded-circle px-4 py-3">
+  <i class="fa-solid fa-arrow-up"></i>
+ 
+</div>
+</div>
+<!-- End up icon -->
+
+<!-- Start Side bar -->
+
+<nav class="nav-bar position-fixed top-0  vh-100 bg-white py-3 d-flex flex-column justify-content-between align-content-center">
+ <div class="nav-logo d-flex justify-content-center">
+  <img src="./imgs/logo.png" class="w-50 " alt="">
+ </div>
+ <div class="nav-menu d-flex justify-content-center">
+  <i class="fa-solid fa-bars text-black fa-2x "></i>
+ </div>
+ <div class="nav-social d-flex align-items-center flex-column">
+  <i class="fa-solid fa-globe text-black mb-3 "></i>
+  <i class="fa-solid fa-share-nodes text-black  "></i>
+ </div>
+</nav>
+
+<div class="nav-side px-4 position-fixed top-0 vh-100 d-flex flex-column justify-content-between bg-dark" style=" z-index: 99;">
+  <div class="menu">
+    <ul class="list-unstyled my-4">
+      <li><button class="menu-li btn bg-transparent text-white" data-category="top_rated">Top Rated</button></li>
+      <li><button class="menu-li btn bg-transparent text-white" data-category="now_playing">Now Playing</button></li>
+      <li><button class="menu-li btn bg-transparent text-white" data-category="popular">Popular</button></li>
+      <li ><button class="menu-li btn bg-transparent text-white" data-category="upcoming">Upcoming</button></li>
+      <li><button class="menu-li btn bg-transparent text-white" data-contact="contact">Contact Us</button></li>
+    </ul>
+  </div>
+  <div class="copyRight">
+    <div class="social mb-3">
+      <a href="" class=" me-3 text-white"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="" class=" me-3 text-decoration-none text-white"><i class="fa-brands fa-twitter"></i></a>
+      <a href="" class="text-decoration-none text-white"> <i class="fa-solid fa-globe"></i></a>
+    </div>
+    <p class="text-secondary ">Copyright © 2022 All Rights <br> Reserved. <br> Created by
+    <a href="https://github.com/eman-elmaghraby" class="fw-bolder text-danger text-decoration-none">Eman Elmaghraby</a>
+    </p>
+  </div>
+</div>
+
+<!-- End Side bar -->
+
+<!-- Start Home Section -->
+<section class="home">
+  <div class="container mt-5">
+            <div class="search d-flex justify-content-center">
+              <input class="form-control w-50 bg-transparent border-light border border-2 rounded-pill m-auto" type="search" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="row displayMovies g-3 mt-5 ms-5"> 
+            </div>          
+  </div>
+</section>
+<!-- End Home Section -->
+
+
+            <!-- Start contact section -->
+<section class="contact py-5">
+<div class="container">
+<h2 class="mb-5 fw-light">Contact US</h2>
+
+<form>
+  <div class="row">
+    <div class="mb-3 col-md-6">
+      <input type="text" required class="shadow-none text-white bg-transparent border-end-0 border-top-0 border-start-0 rounded-0 form-control" placeholder="Enter Your Name" id="userName">
+    </div>
+    <div class="mb-3 col-md-6">
+      <input type="email" required class="shadow-none text-white bg-transparent border-end-0 border-top-0 border-start-0 rounded-0 form-control" placeholder="Enter Your Email" id="email" >
+      <div id="emailError" class="form-text text-danger"></div>
+    </div>
+    <div class="mb-3 col-md-6">
+      <input type="text" required class="shadow-none text-white bg-transparent border-end-0 border-top-0 border-start-0 rounded-0 form-control" placeholder="Enter Your Phone" id="phone">
+      <div id="phoneError" class="form-text text-danger"></div>
+    </div>
+    <div class="mb-3 col-md-6">
+      <input type="text" required class="shadow-none text-white bg-transparent border-end-0 border-top-0 border-start-0 rounded-0 form-control" placeholder="Enter Your Age" id="age">
+      <div id="ageError" class="form-text text-danger"></div>
+    </div>
+    <div class="mb-3 col-md-6">
+      <input type="password" required class="shadow-none text-white bg-transparent border-end-0 border-top-0 border-start-0 rounded-0 form-control" placeholder="Enter Your Password" id="Password">
+      <div id="passwordError" class="form-text text-danger"></div>
+  </div>
+  <div class="mb-3 col-md-6">
+      <input type="password" required class="shadow-none text-white bg-transparent border-end-0 border-top-0 border-start-0 rounded-0 form-control" placeholder="ReEnter Password" id="reEnterPassword">
+      <div id="reEnterPasswordError" class="form-text text-danger"></div>
+  </div>
+  
+  
+  
+  </div>
+  <div class="col-md-12 mb-3">
+    <button type="submit" class="submit btn btn-dark bg-black px-4 py-2 text-white rounded-2">Submit</button>
+  </div>
+</form>
+
+</div>
+</section>
+
+            <!-- End Contact section -->
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type='text/javascript' src='./js/jquery.js'></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
